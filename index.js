@@ -38,6 +38,8 @@ consentForm.addEventListener('submit', (e) => {
     <div class="idiot-gif">
         <img src="images/pirate.jpg" width='100px' height='200px'>
     </div>`
+    closeBtn.disabled = false;
   }, 3000)
+
 });
 
