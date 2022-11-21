@@ -21,9 +21,9 @@ consentForm.addEventListener('submit', (e) => {
   <img src="images/loading.gif" class="loading">
   <p id="uploadText"> Uploading your data to the dark web </p>
   </div>`
-  const uploadText = document.getElementById('uploadText')
+
   setTimeout(() => {
-    uploadText.innerHTML = 'Making the sale...'
+    document.getElementById('uploadText').innerHTML = 'Making the sale...'
   }, 1500)
 });
 
