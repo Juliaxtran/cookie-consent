@@ -18,6 +18,11 @@ closeBtn.addEventListener('click', () => {
 
 consentForm.addEventListener('submit', (e) => {
   e.preventDefault();
+
+  const consentFormData = new FormData(consentForm);
+
+  const name = consentFormData.get('fullName');
+
   modalText.innerHTML = `<div class="modal-inner-loading">
   <img src="images/loading.gif" class="loading">
   <p id="uploadText"> Uploading your data to the dark web </p>
@@ -27,10 +32,11 @@ consentForm.addEventListener('submit', (e) => {
     document.getElementById('uploadText').innerText = 'Making the sale...'
   }, 1500)
   setTimeout(() => {
-    modalInner.innerHTML = `<h2>Thanks you sucker! </h2>
+    modalInner.innerHTML = `<h2>Thanks you sucker!
+    <span class="modal-display-name">${name}</span>, you sucker! </h2> </h2>
     <p>We just sold the rights to your eternal soul.</p>
     <div class="idiot-gif">
-        <img src="images/pirate.jpg" width='100px' height='250px'>
+        <img src="images/pirate.jpg" width='100px' height='200px'>
     </div>`
   }, 3000)
 });
