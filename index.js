@@ -16,10 +16,10 @@ closeBtn.addEventListener('click', () => {
 
 consentForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  modalText.outerHTML = '<div class="modal-inner-loading">' +
-  '<img src="images/loading.gif" class="loading">' +
-  '<p id="uploadText"> Uploading your data to the dark web </p>' +
-  '</div>'
+  modalText.innerHTML = `<div class="modal-inner-loading">
+  <img src="images/loading.gif" class="loading">
+  <p id="uploadText"> Uploading your data to the dark web </p>
+  </div>`
 
 });
 
