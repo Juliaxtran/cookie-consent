@@ -40,8 +40,8 @@ consentForm.addEventListener('submit', (e) => {
     document.getElementById('uploadText').innerText = 'Making the sale...'
   }, 1500)
   setTimeout(() => {
-    modalInner.innerHTML = `<h2>Thanks you sucker!
-    <span class="modal-display-name">${name}</span>, you sucker! </h2> </h2>
+    modalInner.innerHTML = `<h2>
+    <span class="modal-display-name">${name}</span>.Thanks you sucker! </h2> </h2>
     <p>We just sold the rights to your eternal soul.</p>
     <div class="idiot-gif">
         <img src="images/pirate.jpg" width='100px' height='200px'>
